@@ -4,7 +4,7 @@ variable "region" {
   default = "ap-south-1"
 }
 
-## Declare variable vpc_cidr
+## Declaring variable vpc_cidr
 
 variable "vpc_cidr" {
   type    = string
