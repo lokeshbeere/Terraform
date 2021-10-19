@@ -166,7 +166,7 @@ resource "aws_instance" "web-server" {
   user_data                =   "${file("scripts/php-7.sh")}"
   vpc_security_group_ids   =   ["${aws_security_group.web_sg.id}"]
   key_name                 =   "Lokeshkey"
-  iam_instance_profile =   aws_iam_instance_profile.test_profile.arn
+  iam_instance_profile =   aws_iam_instance_profile.test_profile.name
 
      tags = {
   Name = "web-server"
