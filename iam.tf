@@ -36,6 +36,6 @@ resource "aws_iam_role" "test_role" {
   })
 }
 resource "aws_iam_instance_profile" "test_profile" {
-  name = "test_profile"
+  name = "iam-web-profile"
   role = aws_iam_role.test_role.name
 }
